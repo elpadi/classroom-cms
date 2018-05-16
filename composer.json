@@ -1,0 +1,19 @@
+{
+    "name": "elpadi/school",
+    "description": "Code to help manage school tasks",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Padilla",
+            "email": "padi_05@yahoo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+	"autoload": {
+		"psr-4": {
+			"School\\": "src/"
+		}
+	},
+    "require": {}
+}
