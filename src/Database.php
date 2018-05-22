@@ -7,6 +7,7 @@ class Database extends PDO {
 
 	final public function __construct() {
 		parent::__construct(sprintf('sqlite:%s/data.db', dirname(__DIR__)));
+		$this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 
 	public function getStudentsByCourse(int $courseId) {
